@@ -1,11 +1,11 @@
-# Differ - A simple text comparision tool 
+# Differ - A Simple Text Comparison Tool
 
-React single page application (SPA) to compare text buffers in a browser. The application operates in two modes:
+A single-page React application (SPA) for comparing text buffers directly in a browser. The application operates in two modes:
 
-- **character comparison**: for single line of text
-- **line comparison**: for multi-line text
+- **Character Comparison**: for a single line of text.
+- **Line Comparison**: for multi-line text.
 
-No need to save text to a file before comparing (as with other desktop tools), just copy and paste the text to the text areas and hit the compare button.
+Unlike other desktop tools, there is no need to save text to a file before comparing. Simply paste the text into the text areas and click the compare button.
 
 ![image](docs/images/mainpage.png)
 
@@ -13,24 +13,24 @@ No need to save text to a file before comparing (as with other desktop tools), j
 
 ### View
 
-A custom React component *Panel* is composition of standard HTML *button* and *div* components. The custom component is rended (instantiated) three time to create left, right and compare views.
+The custom React component *Panel* is a composition of standard HTML *button* and *div* elements. The custom component is rendered (instantiated) three times to create the left, right, and compare views.
 
 ![image](docs/images/views.png)
 
 ### Controller
 
-The role of controler (callback functions) in the application is to customize behaviour of the views even they are instances of same *Panel* component.
- 
+The role of the controller (callback functions) is to customize the behavior of the views, even though they are instances of the same *Panel* component.
+
 ![image](docs/images/controller.png)
 
 ### Model
 
-The application data (content of all three text areas) is kept in React state variables. The state is updated by the controller functions, triggering re-rendering of the views.
+The application data (content of all three text areas) is stored in React state variables. The state is updated by the controller functions, triggering re-rendering of the views.
 
 ![image](docs/images/model.png)
 
 ## Visualization
 
-The *Chart* component is a simple intance of AG-Charts library bar chart. The chart represents lines/characters added (green) and removed (red).
+The *Chart* component is a simple instance of the AG-Charts library's bar chart. The chart visualizes lines or characters added (green) or removed (red).
 
 ![image](docs/images/chart.png)
