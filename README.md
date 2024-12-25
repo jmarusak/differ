@@ -7,7 +7,7 @@ A single-page React application (SPA) for comparing text buffers directly in a b
 
 Unlike other desktop tools, there is no need to save text to a file before comparing. Simply paste the text into the text areas and click the compare button.
 
-![image](docs/images/mainpage.png)
+![image](images/mainpage.png)
 
 ## Model-View-Controller
 
@@ -15,22 +15,22 @@ Unlike other desktop tools, there is no need to save text to a file before compa
 
 The custom React component *Panel* is a composition of standard HTML *button* and *div* elements. The custom component is rendered (instantiated) three times to create the left, right, and compare views.
 
-![image](docs/images/views.png)
+![image](images/views.png)
 
 ### Controller
 
 The role of the controller (callback functions) is to customize the behavior of the views, even though they are instances of the same *Panel* component.
 
-![image](docs/images/controller.png)
+![image](images/controller.png)
 
 ### Model
 
 The application data (content of all three text areas) is stored in React state variables. The state is updated by the controller functions, triggering re-rendering of the views.
 
-![image](docs/images/model.png)
+![image](images/model.png)
 
 ## Visualization
 
 The *Chart* component is a simple instance of the AG-Charts library's bar chart. The chart visualizes lines or characters added (green) or removed (red).
 
-![image](docs/images/chart.png)
+![image](images/chart.png)
